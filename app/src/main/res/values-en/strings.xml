@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="app_name">SantaBarbara_DiegoGiraldo</string>
+
+    <string name="lugar1">PRINCIPAL PARK</string>
+    <string name="descripcion1">It exhibits two plaques in tribute to leaders of the municipality. You can enjoy good trees, benches and grocery stalls. Santa Bárbara is a municipality, located in the Southwest subregion of the department of Antioquia.</string>
+    <string name="lugar2">CORREGIMENT OF DAMASCO</string>
+    <string name="descripcion2">They call it "Hidden Nativity" due to the topographic situation in which it is located: surrounded by mountains and hills, forming a beautiful landscape. Some houses from the colonial era and the cobblestones from Main Street to Real Street, declared Architectural Heritage by the Municipal Council of Santa Bárbara, are still preserved.</string>
+    <string name="lugar3">HIGH OF CORDONCILLO</string>
+    <string name="descripcion3">Hill overlooking the Cauca river canyon. From here paragliding is practiced.</string>
+    <string name="lugar4">HIGH OF MINAS</string>
+    <string name="descripcion4">In the limits with the municipality of Caldas, from where you can see Santa Bárbara, the Cauca River, the Poblanco River and other municipalities in Southeastern Antioquia. With restaurant services.</string>
+    <string name="lugar5">TREKKING</string>
+    <string name="descripcion5">-Route to Alto de Minas Water Wealth. -Route of the River Buey, sport fishing. -Adventure route along the Poblanco River.</string>
+
+    <string name="descripcion">My name is Diego Giraldo Sánchez, I am a Software development student at CESDE</string>
+    <string name="opcion1">About us</string>
+    <string name="opcion2">Engles</string>
+    <string name="opcion3">Espanish</string>
+
+</resources>

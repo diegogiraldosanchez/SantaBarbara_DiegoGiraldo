@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">SantaBarbara_DiegoGiraldo</string>
+
+    <string name="lugar1">PARQUE PRINCIPAL</string>
+    <string name="descripcion1">Exhibe dos placas en homenaje a líderes del municipio. Se pude disfrutar de una buena arborización, bancas y casetas de venta de comestibles. Santa Bárbara es un municipio , localizado en la subregión Suroeste del departamento de Antioquia.</string>
+    <string name="lugar2">CORREGIMIENTO DE DAMASCO</string>
+    <string name="descripcion2">Le llaman “Pesebre Escondido” debido a la situación topográfica en que se encuentra: rodeado de montañas y colinas, formando un hermoso paisaje. Aún se conservan algunas casas de la época de la colonia y el empedrado de la Calle Principal a la Calle Real, declarado Patrimonio Arquitectónico por el Concejo Municipal de Santa Bárbara.</string>
+    <string name="lugar3">ALTO DE CORDONCILLO</string>
+    <string name="descripcion3">Colina con vista al cañón del río Cauca. Desde aquí se practica parapentismo.</string>
+    <string name="lugar4">ALTO DE MINAS</string>
+    <string name="descripcion4">En los límites con el municipio de Caldas, desde donde se divisa Santa Bárbara, el río Cauca, el río Poblanco y otros municipios del Suroeste Antioqueño.  Con servicios de restaurantes.</string>
+    <string name="lugar5">SENDERISMO</string>
+    <string name="descripcion5">-Ruta Hacia La Riqueza Hídrica Alto de Minas. -Ruta del Río Buey, pesca deportiva. -Ruta aventura por el Río Poblanco.</string>
+    
+    
+    <string name="descripcion">Mi nombre es Diego Giraldo SAnchez, soy estudiante de desarrollo de Software del CESDE</string>
+    <string name="opcion1">Acerca de</string>
+    <string name="opcion2">Ingles</string>
+    <string name="opcion3">Español</string>
 </resources>

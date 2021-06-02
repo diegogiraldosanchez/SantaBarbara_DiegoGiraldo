@@ -1,12 +1,19 @@
 package com.example.santabarbara_diegogiraldo;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Home extends AppCompatActivity {
 
@@ -29,13 +36,53 @@ public class Home extends AppCompatActivity {
 
     }
 
+    public void cambiarIdioma(String leguaje){
+
+        Locale idioma=new Locale(leguaje);
+        Locale.setDefault(idioma);
+
+        Configuration configuraciontelefono=getResources().getConfiguration();
+        configuraciontelefono.locale=idioma;
+        getBaseContext().getResources().updateConfiguration(configuraciontelefono,getBaseContext().getResources().getDisplayMetrics());
+
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+   public boolean  onOptionsItemSelected(MenuItem item){
+       int id=item.getItemId();
+
+       switch (id){
+
+           case(R.id.opcion1):
+               Intent intent1=new Intent(Home.this,Asercade.class);
+               startActivity(intent1);
+               break;
+           case(R.id.opcion2):
+               cambiarIdioma("en");
+               Intent intent2=new Intent(Home.this,Home.class);
+               startActivity(intent2);
+               break;
+           case(R.id.opcion3):
+               cambiarIdioma("es");
+               Intent intent3=new Intent(Home.this,Home.class);
+               startActivity(intent3);
+               break;
+       }
+       return super.onOptionsItemSelected(item);
+
+   }
+
     private void crearLista(){
 
-        listadeLugares.add(new Lugares("PARQUE PRINCIPAL","Exhibe dos placas en homenaje a líderes del municipio. Se pude disfrutar de una buena arborización, bancas y casetas de venta de comestibles. Santa Bárbara es un municipio , localizado en la subregión Suroeste del departamento de Antioquia.",R.drawable.parque));
-        listadeLugares.add(new Lugares("CORREGIMIENTO DE DAMASCO","Le llaman “Pesebre Escondido” debido a la situación topográfica en que se encuentra: rodeado de montañas y colinas, formando un hermoso paisaje. Aún se conservan algunas casas de la época de la colonia y el empedrado de la Calle Principal a la Calle Real, declarado Patrimonio Arquitectónico por el Concejo Municipal de Santa Bárbara.",R.drawable.damasco));
-        listadeLugares.add(new Lugares("ALTO DE CORDONCILLO"," Colina con vista al cañón del río Cauca. Desde aquí se practica parapentismo.",R.drawable.cordoncillo));
-        listadeLugares.add(new Lugares("ALTO DE MINAS","En los límites con el municipio de Caldas, desde donde se divisa Santa Bárbara, el río Cauca, el río Poblanco y otros municipios del Suroeste Antioqueño.  Con servicios de restaurantes.",R.drawable.minas));
-        listadeLugares.add(new Lugares("SENDERISMO","-Ruta Hacia La Riqueza Hídrica Alto de Minas. -Ruta del Río Buey, pesca deportiva. -Ruta aventura por el Río Poblanco.",R.drawable.senderismo));
+        listadeLugares.add(new Lugares(getString(R.string.lugar1),getString(R.string.descripcion1),R.drawable.parque));
+        listadeLugares.add(new Lugares(getString(R.string.lugar2),getString(R.string.descripcion2),R.drawable.damasco));
+        listadeLugares.add(new Lugares(getString(R.string.lugar3),getString(R.string.descripcion3),R.drawable.cordoncillo));
+        listadeLugares.add(new Lugares(getString(R.string.lugar4),getString(R.string.descripcion4),R.drawable.minas));
+        listadeLugares.add(new Lugares(getString(R.string.lugar5),getString(R.string.descripcion5),R.drawable.senderismo));
 
 
     }
